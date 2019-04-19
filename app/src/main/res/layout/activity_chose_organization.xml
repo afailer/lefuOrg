@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_chose_organization"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E4E7F0"
+        />
+
+    <RelativeLayout
+        android:id="@+id/seek_gov_org_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:layout_margin="10dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找养老机构"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/gov_seek"
+            android:drawablePadding="4dp"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E4E7F0"
+        />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chose_gov_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:drawableBottom="@mipmap/success_tick"
+        android:drawablePadding="26dp"
+        android:text="已生成二维码"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_activity_build_zxing_code"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:src="@mipmap/img_default" />
+
+    <TextView
+        android:id="@+id/tv_activity_build_zxing_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/btn_background_selector"
+        android:gravity="center_horizontal"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:text="分享二维码"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:textSize="18sp" />
+
+</LinearLayout>

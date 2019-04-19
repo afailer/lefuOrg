@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lefuorgn.widget.ClearEditText
+        android:id="@+id/cet_fragment_base_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_edit_text_background_shape"
+        android:drawableLeft="@mipmap/search_icon"
+        android:layout_margin="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:hint="请输入关键字"
+        android:textSize="15sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cet_fragment_base_contact"
+        android:layout_marginBottom="50dp"
+        />
+    <!-- 这个是浮动的提示 ，配合字母栏实现放大浮动提示滑动到哪个字母-->
+    <!--下面的自定义属性都是默认的,可以不写-->
+    <!--app:sidebarBackgroundColor 浮动框颜色-->
+    <!--app:sidebarTextColor 字母颜色-->
+    <!--app:sidebarTextSize 字母尺寸-->
+    <com.lefuorgn.widget.quicksidebar.QuickSideBarTipsView
+        android:id="@+id/quickSideBarTipsView"
+        android:layout_width="@dimen/height_quicksidebartips"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/quickSideBarView"
+        app:sidebarBackgroundColor="@color/colorPrimary"
+        app:sidebarTextColor="@android:color/white"
+        app:sidebarTextSize="@dimen/textSize_quicksidebartips"
+        android:layout_below="@id/cet_fragment_base_contact"/>
+    <!-- 这个是字母栏的提示 -->
+    <!--下面的自定义属性都是默认的,可以不写-->
+    <!--app:sidebarItemHeight 每个字母的高度-->
+    <!--app:sidebarTextColor 正常状态下字母颜色-->
+    <!--app:sidebarTextColorChoose 选中了的字母颜色-->
+    <!--app:sidebarTextSize 正常状态字母尺寸-->
+    <!--app:sidebarTextSizeChoose 选中字母尺寸-->
+    <com.lefuorgn.widget.quicksidebar.QuickSideBarView
+        android:id="@id/quickSideBarView"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        app:sidebarItemHeight="@dimen/height_quicksidebaritem"
+        app:sidebarTextColor="@android:color/black"
+        app:sidebarTextColorChoose="@color/colorPrimary"
+        app:sidebarTextSize="@dimen/textSize_quicksidebar"
+        app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose"
+        android:layout_below="@id/cet_fragment_base_contact"/>
+    <RelativeLayout
+        android:id="@+id/stuff_confirm_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/stuff_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryGov"
+            android:text="确定"
+            android:textSize="@dimen/text_size_big"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</RelativeLayout >

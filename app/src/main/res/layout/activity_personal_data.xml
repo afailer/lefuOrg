@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 搜索框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/clear_edit_text_background_shape">
+
+        <TextView
+            android:id="@+id/tv_activity_personal_data_condition"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/arrow_blue_down"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1"
+            android:text="姓名"
+            android:textColor="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/et_activity_personal_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:background="@null"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_activity_personal_data_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/search_blue"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/img_describe"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 老人信息展示 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_activity_personal_data"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/img_head_default" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_sex_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18sp"
+                                android:textColor="#9FAFB6"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_bed"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="床位: 201"
+                                android:textColor="#9FAFB6" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_room"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="房间: 1"
+                                android:textColor="#9FAFB6" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="20dp" >
+
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_floor"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="楼层: 2"
+                                android:textColor="#9FAFB6" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_personal_data_build"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="楼栋: 1"
+                                android:textColor="#9FAFB6" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_activity_personal_data_warning"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="请先搜索老人"
+                        android:gravity="center"
+                        android:textColor="#9FAFB6"
+                        android:background="@color/white"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!-- 生成邀请码和二维码按钮 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_personal_data_invitation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_touch_background"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/invitation_code"
+                        android:drawablePadding="15dp"
+                        android:text="生成邀请码"
+                        android:textColor="#696F6F" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_personal_data_qr"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_touch_background"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/qr_code"
+                        android:drawablePadding="15dp"
+                        android:text="生成二维码"
+                        android:textColor="#696F6F" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/synopsis"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="老人信息" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_activity_personal_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_popup_window_personal_data_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_popup_window_personal_data_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/v_popup_window_personal_data_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/translucent"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

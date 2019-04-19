@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_all_work_arrange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include layout="@layout/chart_time_selector"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white" >
+            <TextView
+                android:layout_width="@dimen/base_grid_width"
+                android:layout_height="@dimen/base_grid_height"
+                android:gravity="center"
+                android:text="姓名"
+                android:textSize="17sp"
+                android:textColor="@color/gray_dark"
+                android:background="@color/white"
+                />
+            <com.lefuorgn.widget.MyHScrollView
+                android:id="@+id/title_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_grid_height"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+                <LinearLayout
+                    android:id="@+id/month_work_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.lefuorgn.widget.MyHScrollView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_stuff_work_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:maxLines="1" />
+</LinearLayout>

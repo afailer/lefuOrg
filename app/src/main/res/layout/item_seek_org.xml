@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_touch_background"
+    android:minHeight="56dp" >
+    
+    <TextView
+        android:id="@+id/name_item_activity_seek_org"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textSize="14sp"
+        android:textColor="#646D75" />
+    
+</RelativeLayout>

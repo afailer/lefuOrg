@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_touch_background"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/tv_item_fragment_nursing_info_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@mipmap/time"
+        android:layout_marginLeft="5dp"
+        />
+    <ImageView
+        android:id="@+id/iv_item_fragment_nursing_info_details_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:src="@mipmap/pic_remove"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/img_describe"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_item_fragment_nursing_info_details_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_item_fragment_nursing_info_details_remove"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+    <TextView
+        android:id="@+id/tv_item_fragment_nursing_info_details_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_fragment_nursing_info_details_date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_item_fragment_nursing_info_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_fragment_nursing_info_details_remarks"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

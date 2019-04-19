@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lefuorgn.widget.ClearEditText
+        android:id="@+id/cet_activity_leave_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_edit_text_background_shape"
+        android:drawableLeft="@mipmap/search_icon"
+        android:layout_margin="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:hint="选择要请假的老人"
+        android:textSize="15sp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LeaveActivity_item">
+                <TextView
+                    style="@style/LeaveActivity_item_name"
+                    android:text="实际离院时间"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_activity_leave_add_rl_time"
+                    style="@style/LeaveActivity_item_content"
+                    android:drawableRight="@mipmap/tree_ex"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/recycler_view_item_division_color"
+                />
+
+            <LinearLayout
+                style="@style/LeaveActivity_item">
+                <TextView
+                    style="@style/LeaveActivity_item_name"
+                    android:text="预计返回时间"
+                    />
+                <TextView
+                    android:id="@+id/tv_activity_leave_add_eb_time"
+                    style="@style/LeaveActivity_item_content"
+                    android:drawableRight="@mipmap/tree_ex"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/recycler_view_item_division_color"
+                />
+
+            <LinearLayout
+                style="@style/LeaveActivity_item">
+                <TextView
+                    style="@style/LeaveActivity_item_name"
+                    android:text="本人或家属签名"
+                    />
+                <EditText
+                    android:id="@+id/et_activity_leave_add_signature"
+                    style="@style/LeaveActivity_item_content"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/recycler_view_item_division_color"
+                />
+
+            <LinearLayout
+                style="@style/LeaveActivity_item">
+                <TextView
+                    style="@style/LeaveActivity_item_name"
+                    android:text="请假事由"
+                    />
+                <EditText
+                    android:id="@+id/et_activity_leave_add_reason"
+                    style="@style/LeaveActivity_item_content"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/recycler_view_item_division_color"
+                />
+
+            <EditText
+                android:id="@+id/et_activity_leave_add_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background_shape"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:hint="注意事项"
+                android:gravity="center"
+                android:lines="7"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_activity_leave_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_background_radius_selector"
+                android:clickable="true"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="提交"
+                android:textColor="@drawable/btn_text_color_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_leave_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_activity_leave_add"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/iv_activity_leave_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/translucent" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

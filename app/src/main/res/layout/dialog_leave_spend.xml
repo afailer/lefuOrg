@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_fragment_fragment_top"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="实际返回日期"
+            android:textSize="18sp"
+            android:textColor="#333333" />
+        <ImageView
+            android:id="@+id/iv_dialog_leave_spend_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@mipmap/close_blue"
+            android:contentDescription="@string/img_describe" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:text="日期"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_dialog_leave_spend_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@mipmap/tree_ex"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@drawable/dialog_fragment_fragment_bottom">
+        <TextView
+            android:id="@+id/btn_dialog_leave_spend_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="@drawable/btn_background_radius_selector"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="6dp"
+            android:text="取消"
+            android:textColor="@drawable/btn_text_color_selector"/>
+        <TextView
+            android:id="@+id/btn_dialog_leave_spend_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="@drawable/btn_background_radius_selector"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="6dp"
+            android:text="确认"
+            android:textColor="@drawable/btn_text_color_selector"/>
+    </LinearLayout>
+</LinearLayout>

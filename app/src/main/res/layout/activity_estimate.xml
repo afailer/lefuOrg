@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:background="@color/colorPrimary" >
+
+        <TextView
+            android:id="@+id/tv_activity_estimate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tool_bar_title_size"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_activity_estimate_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/close_gray"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:scrollbars="vertical" >
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_load_activity_estimate"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                style="@style/loading"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '21.0.0'
+    defaultConfig {
+        applicationId "com.lefuorgn"
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "2.38"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "a79a5b85cad2cfd90d9474ad",
+                JPUSH_CHANNEL : "developer-default",
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/ormlite-core-5.0.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/MPAndroidChart.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/lefubp2.3.jar')
+    compile files('libs/lefukj-front-beans-v1.3.jar')
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'cn.jiguang.sdk:jpush:3.0.3'
+    compile 'cn.jiguang.sdk:jcore:1.1.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/cgmtcapi.jar')
+    compile files('libs/cgmAl.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/MobCommons.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-QQ-2.6.3.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.3.jar')
+    compile files('libs/ShareSDK-QZone-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.3.jar')
+    compile files('libs/ShareSDK-Core-2.6.5.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.5.jar')
+    compile files('libs/photoview-library-1.2.2.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}

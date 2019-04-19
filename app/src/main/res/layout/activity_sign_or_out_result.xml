@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_activity_sign_out_result_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签退时间: 2016年7月30日"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_activity_sign_out_result_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="22dp"
+        android:text="23:45:19"
+        android:textColor="@color/colorPrimary"
+        android:textSize="42sp"/>
+    <TextView
+        android:id="@+id/tv_activity_sign_out_result_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:drawableTop="@mipmap/daily_attendance_success"
+        android:drawablePadding="36dp"
+        android:text="签到成功"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/btn_activity_sign_out_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_radius_selector"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="查看考勤记录"
+        android:textSize="16sp"
+        android:textColor="@drawable/btn_text_color_selector"/>
+    <TextView
+        android:id="@+id/btn_activity_sign_out_result_pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_radius_pink_selector"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="查看考勤记录"
+        android:textSize="16sp"
+        android:textColor="@drawable/btn_text_pink_color_selector"/>
+</LinearLayout>

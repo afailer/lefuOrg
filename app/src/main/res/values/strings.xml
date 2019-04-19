@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">乐福机构</string>
+    <string name="app_sub_name">乐福健康管理云平台</string>
+    <string name="img_describe">乐福图片</string>
+    <string name="main_tab_name_home_page">首页</string>
+    <string name="main_tab_name_all_elderly">所有老人</string>
+    <string name="main_tab_name_setting">设置</string>
+    <string name="main_tab_name_back">返回</string>
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+    <string name="tip_double_click_exit">再次点击退出程序</string>
+    <string name="blue_help">帮助</string>
+    <string name="home_page_synopsis_name">移动办公</string>
+    <string name="home_page_real_time_data">数据管理</string>
+    <!-- 时间选择器使用 -->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="home_page_index_details">机构详情</string>
+    <string name="home_page_index_event">机构活动</string>
+    <string name="home_page_index_location">机构位置</string>
+    <string name="permission_no">无权限</string>
+
+    <string name="dialog_sign_info_sleep_deep">深睡眠</string>
+    <string name="dialog_sign_info_sleep_shallow">浅睡眠</string>
+    <string name="dialog_sign_info_sleepiness">嗜睡</string>
+    <string name="dialog_sign_info_lethargy">昏睡</string>
+    <string name="dialog_sign_info_coma">昏迷</string>
+    <string name="dialog_sign_info_consciousness_fuzzy">意识模糊</string>
+    <string name="dialog_sign_info_other">其它</string>
+    <string name="dialog_sign_info_type">类别</string>
+    <string name="dialog_sign_info_breakfast">早餐</string>
+    <string name="dialog_sign_info_lunch">午餐</string>
+    <string name="dialog_sign_info_dinner">晚餐</string>
+    <string name="dialog_sign_info_select_all">全选</string>
+    <string name="dialog_sign_info_food_intake">食量</string>
+    <string name="dialog_sign_info_food_intake_less">偏少</string>
+    <string name="dialog_sign_info_food_intake_normal">正常</string>
+    <string name="dialog_sign_info_food_intake_excessive">偏多</string>
+    <string name="dialog_sign_info_remarks">备注</string>
+    <string name="dialog_sign_info_snacks">零食</string>
+    <string name="dialog_sign_info_mood">心情</string>
+    <string name="dialog_sign_info_disease">疾病</string>
+    <string name="dialog_sign_info_remarks_add">添加备注</string>
+    <string name="setting_account">账户设置</string>
+    <string name="setting_password_update">修改密码</string>
+    <string name="setting_sync">同步设置</string>
+    <string name="setting_clear_data">清除数据</string>
+    <string name="setting_check_for_updates">检查更新</string>
+    <string name="setting_about_cloud_platform">关于云平台</string>
+    <string name="setting_share">分享</string>
+    <string name="setting_sign_out">退出</string>
+
+    <string name="setting_account_name">\t\t\t\t\t姓名</string>
+    <string name="setting_account_phone">电话号码</string>
+    <string name="setting_account_email">\t\t\t\t\t邮箱</string>
+
+    <string name="setting_password_update_old">\t\t原密码</string>
+    <string name="setting_password_update_new">\t\t新密码</string>
+    <string name="setting_password_update_confirm">确认密码</string>
+    <string name="gov_lefu_page">首页</string>
+    <string name="gov_map_page">地图</string>
+    <string name="gov_circular_page">通知</string>
+    <string name="gov_setting_page">设置</string>
+    <string name="btn_confirm">确认提交</string>
+
+    <string name="refrence_value">血糖值:</string>
+</resources>

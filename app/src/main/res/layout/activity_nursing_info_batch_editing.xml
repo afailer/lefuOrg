@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="@dimen/base_grid_width"
+                android:layout_height="@dimen/base_grid_height"
+                android:gravity="center"
+                android:text="姓名"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/recycler_view_item_division_color"/>
+
+            <com.lefuorgn.widget.MyHScrollView
+                android:id="@+id/hsv_activity_nursing_info_batch_editing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_grid_height"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_nursing_info_batch_editing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+            </com.lefuorgn.widget.MyHScrollView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_nursing_info_batch_editing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scrollbars="vertical"/>
+
+        <TextView
+            android:id="@+id/btn_activity_nursing_info_batch_editing_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_red_main_color_selector"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_nursing_info_batch_editing_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:maxLines="1" />
+
+</FrameLayout>

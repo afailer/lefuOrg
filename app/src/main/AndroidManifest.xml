@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lefuorgn">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"
+        tools:overrideLibrary="com.chad.library" />
+
+    <permission
+        android:name="com.lefuorgn.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.lefuorgn.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许程序监视，修改或放弃播出电话 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- 允许一个程序收到广播后快速收到下一个广播 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 允许读写系统设置项 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 修改声音设置信息 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/lefuorg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme">
+        <activity
+            android:name=".AppStart"
+            android:theme="@style/AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lefu.MainActivity" />
+        <activity
+            android:name=".gov.GovMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AppLogin"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".lefu.activity.EventActivity" />
+        <activity android:name=".lefu.activity.EventDetailsActivity" />
+        <activity android:name=".lefu.activity.SynopsisDetailsActivity" />
+        <activity android:name=".lefu.activity.LocationDetailsActivity" />
+        <activity
+            android:name=".lefu.activity.LeaveActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".lefu.activity.LeaveDetailsActivity" />
+        <activity android:name=".lefu.activity.LeaveOperationActivity" />
+        <activity android:name=".lefu.activity.LeaveAddActivity" />
+        <activity android:name=".lefu.activity.NursingReportDetailsActivity" />
+        <activity
+            android:name=".lefu.activity.PersonalDataActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".lefu.activity.ElderlyInfoActivity" />
+        <activity android:name=".lefu.activity.HospitalizationInfoActivity" />
+        <activity android:name=".lefu.activity.FamilyInfoActivity" />
+        <activity android:name=".lefu.activity.MedicalHistoryInfoActivity" />
+        <activity android:name=".lefu.activity.LogbookInfoActivity" />
+        <activity android:name=".lefu.activity.LogbookInfoDetailsActivity" />
+        <activity android:name=".lefu.activity.BuildInviteCodeActivity" />
+        <activity android:name=".lefu.activity.BuildZxingCodeActivity" />
+        <activity
+            android:name=".lefu.activity.EstimateActivity"
+            android:theme="@style/ActivityDialog" />
+        <activity android:name=".lefu.activity.EstimateSaveActivity" />
+        <activity android:name=".lefu.activity.EstimateDetailsActivity" />
+        <activity android:name=".lefu.activity.EstimateUpdateActivity" />
+        <activity android:name=".lefu.activity.CordonInfoActivity" />
+        <activity
+            android:name=".lefu.activity.ContactActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".lefu.activity.BirthdayReminderActivity" />
+        <activity android:name=".lefu.activity.BirthdayReminderDetailsActivity" />
+        <activity android:name=".lefu.activity.TodayWorkActivity" />
+        <activity android:name=".lefu.activity.AllocatingTaskNursingActivity" />
+        <activity android:name=".lefu.activity.AllocatingTaskProgressActivity" />
+        <activity android:name=".lefu.activity.AllocatingTaskProgressDetailsActivity" />
+        <activity
+            android:name=".lefu.activity.AllocatingTaskNursingDetailsActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".lefu.activity.ExecuteAllocatingTaskActivity" />
+        <activity android:name=".lefu.activity.ExecuteAllocatingTaskDetailsActivity" />
+        <activity android:name=".lefu.activity.ExecuteNursingAddActivity" />
+        <activity android:name=".lefu.activity.MeasurementTaskActivity" />
+        <activity android:name=".lefu.activity.OrderTakingNursingActivity" />
+        <activity android:name=".lefu.activity.ExecuteNursingActivity" />
+        <activity android:name=".lefu.activity.SignInfoActivity" />
+        <activity android:name=".lefu.activity.SignInfoDetailsActivity" />
+        <activity android:name=".lefu.activity.SignGraphicDataActivity" />
+        <activity android:name=".lefu.activity.NursingInfoActivity" />
+        <activity android:name=".lefu.activity.NursingInfoDetailsActivity" />
+        <activity android:name=".lefu.activity.DisplayMultiMediaActivity" />
+        <activity android:name=".lefu.activity.NursingInfoBatchEditingActivity" />
+        <activity android:name=".lefu.activity.ReadilyShootActivity" />
+        <activity android:name=".lefu.activity.ReadilyShootDetailsActivity" />
+        <activity android:name=".lefu.multiMedia.MultiMediaActivity" />
+        <activity android:name=".lefu.multiMedia.PreviewMultiMediaActivity" />
+        <activity android:name=".lefu.multiMedia.PreviewPictureActivity" />
+        <activity android:name=".lefu.activity.SelectOldPeopleActivity" />
+        <activity android:name=".lefu.activity.ContactDetailsActivity" />
+        <activity android:name=".lefu.activity.ContactDepartmentsDetailsActivity" />
+        <activity android:name=".lefu.activity.LogbookActivity" />
+        <activity android:name=".lefu.activity.LogbookAddActivity" />
+        <activity android:name=".lefu.activity.DataAuditActivity" />
+        <activity android:name=".lefu.activity.SettingAccountActivity" />
+        <activity android:name=".lefu.activity.SettingPasswordUpdateActivity" />
+        <activity android:name=".lefu.activity.SettingSyncActivity" />
+        <activity android:name=".lefu.activity.SettingAboutCloudPlatformActivity" />
+        <activity android:name=".lefu.activity.TelephoneActivity" />
+        <activity android:name=".lefu.activity.SignBloodPressureActivity" />
+        <activity android:name=".lefu.activity.SignBloodSugarActivity" />
+        <activity android:name=".lefu.activity.SignBloodSugarAcquisitionActivity" />
+        <activity android:name=".lefu.activity.MipcaActivityCapture" />
+        <activity android:name=".lefu.activity.AlarmInformationActivity" />
+        <activity android:name=".lefu.activity.LocationQueryActivity" />
+        <activity android:name=".lefu.activity.NavigationActivity" />
+        <activity android:name=".lefu.activity.ElectronicFenceActivity" />
+        <activity android:name=".lefu.activity.TrajectoryPlaybackActivity" />
+        <activity android:name=".lefu.activity.AlarmInformationDetailsActivity" />
+        <activity android:name=".lefu.activity.LowBatterySolveActivity" />
+        <activity
+            android:name=".lefu.activity.AlarmSolveActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service android:name=".interactive.impl.BackgroundOperatingDevice" />
+
+        <receiver android:name=".receiver.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".gov.activity.AllOrgActiveActivity" />
+        <activity android:name=".gov.activity.AllNewsActivity" />
+        <activity android:name=".gov.activity.OrgActiveActivity" />
+        <activity android:name=".gov.activity.OrgNewsActivity" />
+        <activity android:name=".gov.activity.GovOrganizationActivity" />
+        <activity android:name=".gov.activity.SeekOrgActivity" />
+        <activity android:name=".gov.activity.ChoseOrganizationActivity" />
+        <activity android:name=".gov.activity.AreaAllDataActivity" />
+        <activity android:name=".gov.activity.ChartUseRateActivity" />
+        <activity android:name=".gov.activity.ChartAgeActivity" />
+        <activity android:name=".gov.activity.ChartSexRatioActivity" />
+        <activity android:name=".gov.activity.ChartDiseaseActivity" />
+        <activity android:name=".gov.activity.ChartMedicalInsuranceActivity" />
+        <activity android:name=".gov.activity.ChartNurseLevalActivity" />
+
+        <activity android:name=".oa.activity.MyAttendanceApplyActivity" />
+        <activity android:name=".oa.activity.AttendanceApplyHandleActivity" />
+        <activity android:name=".oa.activity.ApplicationProgressActivity" />
+        <activity android:name=".oa.activity.DailyAttendanceActivity" />
+        <activity android:name=".oa.activity.AttendanceApplyActivity" />
+        <activity android:name=".oa.activity.ClockAttendanceApplyActivity" />
+        <activity android:name=".oa.activity.ClockAttendanceApplyHandleActivity" />
+        <activity android:name=".oa.activity.ClockApplyActivity" />
+        <activity android:name=".oa.activity.ClockApplicationProgressActivity" />
+        <activity android:name=".oa.activity.SignOrSignOutResultActivity" />
+        <activity android:name=".oa.activity.SelectStuffActivity" />
+        <activity android:name=".oa.activity.AttendanceApprovalActivity" />
+        <activity android:name=".oa.activity.ClockAttendanceApprovalActivity"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="a79HjLWYfXVz7Wg2xh0gEt8YAIstf8Mj" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gov.activity.MessageDetailActivity" />
+        <activity
+            android:name="lefuorgn.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ************************************************************ -->
+        <!-- *********************以下是极光推送的一些配置******************** -->
+        <!-- ************************************************************ -->
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.lefuorgn" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.lefuorgn" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lefuorgn" />
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lefuorgn" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.ReceiveJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 用户登录成功广播 -->
+                <action android:name="intent_action_notice_login" />
+                <!-- 用户查看通知广播(当前应用不存在任何页面, 打开主页面成功广播) -->
+                <action android:name="intent_action_notice_main_page_open" />
+
+                <category android:name="com.lefuorgn" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".oa.activity.AttendanceRecordActivity" />
+        <activity
+            android:name=".oa.activity.MyWorkPlanActivity"
+             />
+        <activity android:name=".oa.activity.AllStuffWorkPlanActivity"/>
+    </application>
+
+</manifest>

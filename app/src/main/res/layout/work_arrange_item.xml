@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_item_fragment_contact_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#454545"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/stuff_name"
+            android:layout_width="@dimen/base_grid_width"
+            android:layout_height="@dimen/base_grid_height"
+            android:gravity="center"
+            android:text="姓名"
+            android:maxLines="1"
+            android:textSize="17sp"
+            android:textColor="@color/gray_dark"
+            android:background="@color/white" />
+        <com.lefuorgn.widget.MyHScrollView
+            android:id="@+id/item_work_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_grid_height"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+            <LinearLayout
+                android:id="@+id/month_work_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.lefuorgn.widget.MyHScrollView>
+    </LinearLayout>
+</LinearLayout>

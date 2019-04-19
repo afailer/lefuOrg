@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:drawableBottom="@mipmap/success_tick"
+        android:drawablePadding="26dp"
+        android:text="已生成邀请码"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_activity_build_invite_code_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="66dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tv_activity_build_invite_code_copy"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_background_selector"
+        android:paddingBottom="2dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="2dp"
+        android:text="复制"
+        android:gravity="center"
+        android:textColor="@drawable/btn_text_color_selector"
+        />
+
+    <TextView
+        android:id="@+id/tv_activity_build_invite_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/btn_background_selector"
+        android:gravity="center_horizontal"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:text="前往邀请"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:textSize="18sp" />
+
+</LinearLayout>

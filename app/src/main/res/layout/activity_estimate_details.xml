@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lefu="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 导航标题栏 -->
+        <com.lefuorgn.widget.PagerSlidingTabStrip
+            android:id="@+id/psts_activity_estimate_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sliding_tab_strip_background"
+            lefu:allowWidthFull="true"
+            lefu:slidingBlock="@drawable/image_sliding_block" >
+        </com.lefuorgn.widget.PagerSlidingTabStrip>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_activity_estimate_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_estimate_details_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:maxLines="1"
+        android:visibility="gone"/>
+
+</FrameLayout>

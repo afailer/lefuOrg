@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/v_popup_window_personal_data_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_touch_background"
+        android:padding="8dp"
+        android:text="姓名"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_view_item_division_color"/>
+
+    <TextView
+        android:id="@+id/v_popup_window_personal_data_bed_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_touch_background"
+        android:padding="8dp"
+        android:text="床位号"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_view_item_division_color"/>
+
+    <TextView
+        android:id="@+id/v_popup_window_personal_data_id_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_touch_background"
+        android:padding="8dp"
+        android:text="身份证号"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/v_popup_window_personal_data_condition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/translucent"/>
+
+</LinearLayout>

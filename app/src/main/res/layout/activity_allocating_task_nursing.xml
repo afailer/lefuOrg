@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_activity_allocating_task_nursing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_touch_background"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="今日派单情况"
+            android:textColor="#9FAFB6" />
+
+        <TextView
+            android:id="@+id/tv_activity_allocating_task_nursing_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9FAFB6" />
+
+        <TextView
+            android:id="@+id/tv_activity_allocating_task_nursing_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/recycler_view_item_division_color"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_activity_recycler"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingTop="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_activity_allocating_task_nursing"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="生成派单"
+        android:textSize="20sp"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:background="@drawable/btn_background_selector"
+        />
+
+</LinearLayout>

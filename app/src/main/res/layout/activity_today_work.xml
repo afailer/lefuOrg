@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_background_color_primary_shape"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="护理服务"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_today_work_shape"
+        android:padding="1dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_distribute_leaflets_nursing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="派单" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color"/>
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_order_taking_nursing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="接单" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color"/>
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_execute_nursing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="执行" />
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_background_color_primary_shape"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="体征服务"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_today_work_shape"
+        android:padding="1dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_distribute_leaflets_sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="派单"
+            android:textColor="#9FAFB6"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color"/>
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_order_taking_sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="接单"
+            android:textColor="#9FAFB6"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_view_item_division_color"/>
+
+        <TextView
+            android:id="@+id/tv_activity_today_work_execute_sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_touch_background"
+            android:paddingLeft="20dp"
+            android:text="执行"
+            android:textColor="#9FAFB6"/>
+    </LinearLayout>
+
+</LinearLayout>

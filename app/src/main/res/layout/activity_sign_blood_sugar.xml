@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- 血糖设备操作引导层 -->
+    <LinearLayout
+        android:id="@+id/ll_activity_sign_blood_sugar_boot_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/btn_activity_sign_blood_sugar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/blood_sugar_search_selector"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:text="设备搜索"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/blood_sugar_help"
+            android:drawablePadding="8dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/blue_help"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/recycler_view_item_division_color"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <!-- 设备搜索内容提示 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 设备操作提示 -->
+            <LinearLayout
+                android:id="@+id/ll_activity_sign_blood_sugar_device_operation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/blood_sugar_point"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="开启设备"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="长按开关按钮5-6秒，直至绿灯亮起后松手"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/blood_sugar_med_tech"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/img_describe"/>
+            </LinearLayout>
+            <!-- 设备搜索失败提示 -->
+            <LinearLayout
+                android:id="@+id/ll_activity_sign_blood_sugar_search_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/blood_sugar_point"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="检查设备是否已开启"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="已开启: 蓝灯快速闪烁\n未开启: 长按开关按钮6秒，直至绿灯亮起后松手"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/blood_sugar_med_tech"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/img_describe"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/blood_sugar_point"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="检查设备电量"
+                    android:textColor="#333333"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:text="如尝试多次仍未能连接，请将设备充电直至绿灯亮起"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+    <!-- 数据显示层 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activity_sign_blood_sugar_search_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+</FrameLayout>

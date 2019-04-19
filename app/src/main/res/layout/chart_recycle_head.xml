@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:orientation="horizontal" >
+`
+    <TextView
+	    android:id="@+id/chart_head_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#f7f7f7"
+		android:textColor="@color/black"
+		android:text="时间"
+        />
+	 <TextView 
+	    android:id="@+id/chart_head_bed_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+		 android:text="床位(张)"
+		 android:textColor="@color/black"
+        />
+	  <TextView 
+	    android:id="@+id/chart_head_bed_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+		  android:text="剩余(张)"
+		  android:textColor="@color/black"
+        />
+	   <TextView 
+	    android:id="@+id/chart_head_use_rate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#f7f7f7"
+		   android:text="入住率"
+		   android:textColor="@color/black"
+        />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:background="#FAFAFA"
+        >
+        <TextView
+            android:id="@+id/tv_item_fragment_order_taking_nursing_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="#323331"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_fragment_order_taking_nursing_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dp"
+            android:layout_toRightOf="@id/tv_item_fragment_order_taking_nursing_name"
+            android:textSize="12sp"
+            android:textColor="#8392a0"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_item_fragment_order_taking_nursing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_fragment_order_taking_nursing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

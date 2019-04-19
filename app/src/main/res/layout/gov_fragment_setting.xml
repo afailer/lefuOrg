@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/set_user"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryGov"
+        >
+        <com.lefuorgn.widget.CircleImageView
+            android:id="@+id/headImg"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:background="@mipmap/lefu_default"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/headImg"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="18dp"
+            >
+        <TextView 
+            android:id="@+id/setting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改个人资料"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/gov_title_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gov_setting_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+	<TextView 
+	    android:id="@+id/version_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/text_color_normal"
+	    android:layout_gravity="bottom"
+	    android:layout_margin="30dp"
+	    />
+</LinearLayout>

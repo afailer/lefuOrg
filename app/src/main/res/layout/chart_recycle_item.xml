@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:orientation="horizontal" >
+    <RelativeLayout
+        android:id="@+id/tv_time_layout"
+         android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#f7f7f7"
+
+        >
+        <TextView
+       		 android:id="@+id/chart_recycle_time_year"
+             android:textColor="#999999"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerHorizontal="true"
+        />
+        <TextView
+       		 android:id="@+id/chart_recycle_time_month"
+             android:textColor="#17bbef"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="14sp"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@id/chart_recycle_time_year"
+        />
+    </RelativeLayout>
+	 <TextView 
+	    android:id="@+id/chart_recycle_bed_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+	  <TextView 
+	    android:id="@+id/chart_recycle_bed_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+	   <TextView 
+	    android:id="@+id/chart_recycle_use_rate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#f7f7f7"
+        />
+</LinearLayout>

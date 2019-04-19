@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_activity_trajectory_playback_date_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/trajectory_playback_left"
+            android:drawablePadding="4dp"
+            android:text="前一天"
+            android:textColor="#AFAEB3"/>
+        <TextView
+            android:id="@+id/tv_activity_trajectory_playback_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#9A999E"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/btn_activity_trajectory_playback_date_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/trajectory_playback_right"
+            android:drawablePadding="4dp"
+            android:text="后一天"
+            android:textColor="#AFAEB3"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_view_item_division_color"/>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_activity_trajectory_playback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activity_trajectory_playback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

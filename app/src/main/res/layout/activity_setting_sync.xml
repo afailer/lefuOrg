@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <com.lefuorgn.widget.togglebutton.ToggleButton
+            android:id="@+id/tb_activity_setting_sync"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            app:onColor="@color/colorPrimary"
+            app:offColor="#E4E4E4"
+            app:spotColor="@color/white"
+            app:offBorderColor="#E4E4E4"
+            app:borderWidth="1dp"
+            >
+        </com.lefuorgn.widget.togglebutton.ToggleButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tb_activity_setting_sync"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="非wifi情况下更新数据"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tv_activity_setting_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_touch_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#333333"
+        android:textSize="16sp"/>
+
+</LinearLayout>

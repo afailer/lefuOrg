@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lefuorgn.widget.ClearEditText
+        android:id="@+id/cet_fragment_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_edit_text_background_shape"
+        android:drawableLeft="@mipmap/search_icon"
+        android:layout_margin="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:hint="请输入关键字"
+        android:textSize="15sp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_activity_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_activity_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_popup_window_fragment_leave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_popup_window_fragment_leave"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/v_popup_window_fragment_leave"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/translucent"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

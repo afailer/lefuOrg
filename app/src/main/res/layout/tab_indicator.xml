@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/tab_icon_home_page"
+        android:drawablePadding="4dp"
+        android:text="@string/main_tab_name_home_page"
+        android:textColor="@color/tabHost_text_color_normal"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tab_red_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_toRightOf="@id/tab_title"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/tab_icon_red_dot"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:src="@mipmap/not_in_specified_area"
+        android:contentDescription="@string/img_describe"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="提示"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_horizontal"
+        android:text="您当前不在考勤区域内,请点击刷新重试"
+        android:textSize="14sp"
+        android:textColor="@color/gray"/>
+    <TextView
+        android:id="@+id/btn_dialog_daily_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:text="确定"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+</LinearLayout>

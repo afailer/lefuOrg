@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_load_activity_fragment"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/pb_load_activity_fragment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        style="@style/loading"/>
+
+</LinearLayout>

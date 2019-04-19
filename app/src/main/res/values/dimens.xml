@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="tool_bar_height">48dp</dimen>
+    <dimen name="tool_bar_title_size">20sp</dimen>
+    <dimen name="tool_bar_margin_padding_left_right">15dp</dimen>
+    <dimen name="tool_bar_menu_text_size">16sp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44.0dip</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10.0dip</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30.0dip</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20.0dip</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21.0dip</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果 -->
+    <dimen name="pickerview_textsize">20.0dip</dimen>
+    <dimen name="tabHost_height">54dp</dimen>
+    <dimen name="blue_search_high">18sp</dimen>
+    <dimen name="home_page_action_bar_height">117dp</dimen>
+    <dimen name="home_page_synopsis_height">110dp</dimen>
+    <dimen name="home_page_sub_title_height">42dp</dimen>
+    <dimen name="home_page_real_time_data_height">204dp</dimen>
+    <dimen name="home_page_index_height">125dp</dimen>
+    <dimen name="home_page_text_size_big">20sp</dimen>
+    <dimen name="home_page_text_size_mid">13sp</dimen>
+    <dimen name="home_page_text_size_small">12sp</dimen>
+    <dimen name="home_page_margin_left">17dp</dimen>
+    <dimen name="home_page_margin_right">17dp</dimen>
+    <dimen name="blue_margin_left">20dp</dimen>
+    <dimen name="json_form_padding">12dp</dimen>
+    <dimen name="json_form_padding_top">10dp</dimen>
+    <dimen name="blue_search_small">16sp</dimen>
+    <dimen name="textSize_quicksidebar">10sp</dimen>
+    <dimen name="textSize_quicksidebar_choose">15sp</dimen>
+    <dimen name="textSize_quicksidebartips">20sp</dimen>
+    <dimen name="height_quicksidebartips">45dp</dimen>
+    <dimen name="height_quicksidebaritem">20dp</dimen>
+    <dimen name="text_theme">18sp</dimen>
+    <dimen name="base_grid_width">90dp</dimen>
+    <dimen name="base_grid_height">60dp</dimen>
+    <dimen name="nursing_info_editing_width">140dp</dimen>
+    <dimen name="btn_padding">8dp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="zxing_width_height">150dip</dimen>
+
+</resources>

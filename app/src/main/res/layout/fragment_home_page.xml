@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 最上面的机构名称 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_page_action_bar_height"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_fragment_home_page_org_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/home_page_margin_left"
+            android:layout_marginTop="37dp"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_page_text_size_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fragment_home_page_org_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/home_page_margin_left"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="@string/app_sub_name"
+            android:textColor="@color/home_page_org_sub_name_text_color"
+            android:textSize="@dimen/home_page_text_size_small" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/tv_fragment_home_page_index_details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_page_index_details"
+                    android:drawableLeft="@mipmap/home_top_details"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#3DFFFFFF"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/tv_fragment_home_page_index_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_page_index_event"
+                    android:drawableLeft="@mipmap/home_top_event"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#3DFFFFFF"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/tv_fragment_home_page_index_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_page_index_location"
+                    android:drawableLeft="@mipmap/home_top_location"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_home_page_graphic_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/home_page_line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_sub_title_height"
+                android:drawableLeft="@drawable/home_title_label"
+                android:drawableRight="@mipmap/home_more"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/home_page_margin_left"
+                android:paddingRight="@dimen/home_page_margin_right"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/home_page_real_time_data"
+                android:textSize="@dimen/home_page_text_size_mid"
+                android:textColor="#999999"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/home_page_line_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_home_page_date_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/home_page_line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_sub_title_height"
+                android:paddingLeft="@dimen/home_page_margin_left"
+                android:paddingRight="@dimen/home_page_margin_right"
+                android:drawableLeft="@drawable/home_title_label"
+                android:drawableRight="@mipmap/home_more"
+                android:background="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/home_page_synopsis_name"
+                android:textSize="@dimen/home_page_text_size_mid"
+                android:textColor="#999999"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/home_page_line_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_home_page_mobile_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_item_fragment_elderly_viewpager_tab"
+        style="@style/viewPage_slidingTabTitle"
+        android:layout_centerInParent="true"
+        android:paddingBottom="6dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="6dp"
+        android:textColor="@drawable/elderly_fragment_slide_title"
+        android:text="进行中" />
+
+</RelativeLayout>

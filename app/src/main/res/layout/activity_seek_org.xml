@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_seek_org"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.lefuorgn.widget.ClearEditText
+        android:id="@+id/cet_seek_org_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_attention"
+        android:drawableLeft="@mipmap/search_bar_icon_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:hint="搜索"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:singleLine="true"
+        android:textSize="15sp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/seek_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_counter_horizontal_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_counter_vertical_left"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/view_counter_reduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:text="-"/>
+
+        <View
+            android:id="@+id/view_counter_vertical_center_left"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <EditText
+            android:id="@+id/view_counter_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:gravity="center"
+            android:text="0"/>
+
+        <View
+            android:id="@+id/view_counter_vertical_center_right"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/view_counter_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:text="+"/>
+
+        <View
+            android:id="@+id/view_counter_vertical_right"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_counter_horizontal_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+</LinearLayout>

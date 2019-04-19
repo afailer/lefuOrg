@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 第一个模块 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimaryGov"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <com.lefuorgn.widget.CircleImageView
+                android:id="@+id/iv_fragment_gov_head"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_head_default" />
+
+            <TextView
+                android:id="@+id/tv_fragment_gov_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_fragment_gov_head"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_fragment_gov_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="32sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_gov_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_background"
+            android:layout_margin="10dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/gov_seek"
+                android:drawablePadding="4dp"
+                android:text="查找街道、社区与养老机构"
+                android:textSize="12sp"
+                android:textColor="#888888"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_gov_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EFEFEF" />
+
+            <!-- 第三个模块 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_gov_circular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:background="@drawable/item_touch_background">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.lefuorgn.widget.MarqueeTextView
+                            android:id="@+id/tv_fragment_gov_marquee"
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#888888"
+                            android:layout_marginRight="10dp"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"/>
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_gov_notice"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/msg_new"
+                            android:contentDescription="@string/img_describe"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_gov_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="线上政策"
+                        android:textSize="11sp"
+                        android:textColor="#8E9091"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_fragment_gov_three"
+                        android:text="通知公告"
+                        android:textSize="16sp"
+                        android:textColor="#FE7887"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@mipmap/gov_notice"
+                        android:contentDescription="@string/img_describe"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ECECEC" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_touch_background">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fragment_gov_area_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="67dp"
+                        android:background="@drawable/item_touch_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/gov_region_data"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="17dp"
+                            android:contentDescription="@string/img_describe"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="辖区数据"
+                                android:textColor="#FF9139"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="区域数据意见获悉"
+                                android:textSize="11sp"
+                                android:textColor="#8E9091" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ECECEC" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fragment_gov_area_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="67dp"
+                        android:background="@drawable/item_touch_background" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/gov_region_member"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="17dp"
+                            android:contentDescription="@string/img_describe"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="辖区成员"
+                                android:textColor="#23C0AF"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="街道机构一目了然"
+                                android:textSize="11sp"
+                                android:textColor="#8E9091"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EFEFEF"
+                />
+
+            <!-- 第四个模块 -->
+            <LinearLayout
+                android:id="@+id/ll_fragment_gov_gov_model"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="民生政话"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:id="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_gov_gov_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/gov_right_arrow"
+                        android:drawablePadding="8dp"
+                        android:text="查看全部"
+                        android:textSize="14sp"
+                        android:textColor="#4AAEF6"
+                        android:layout_alignTop="@+id/textView" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EFEFEF"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_fragment_gov_gov_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="252dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EFEFEF" />
+
+            <!-- 第五个模块 -->
+            <LinearLayout
+                android:id="@+id/ll_fragment_gov_group_model"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="@drawable/item_touch_background"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="机构活动"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_gov_group_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/gov_right_arrow"
+                        android:drawablePadding="8dp"
+                        android:text="查看全部"
+                        android:textSize="14sp"
+                        android:textColor="#4AAEF6"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EFEFEF"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_fragment_gov_group_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="252dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

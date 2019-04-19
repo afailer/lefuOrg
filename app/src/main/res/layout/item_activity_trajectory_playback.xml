@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_touch_background">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#CED9DF"/>
+        <ImageView
+            android:id="@+id/iv_item_activity_trajectory_playback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trajectory_point_selector"
+            android:contentDescription="@string/img_describe"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#CED9DF"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_item_activity_trajectory_playback_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:北京市丰台区南三环西路辅路"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_item_activity_trajectory_playback_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="更新时间: 2017-03-24 16:00"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+</LinearLayout>

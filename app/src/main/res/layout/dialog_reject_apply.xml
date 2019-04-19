@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="6dp"
+        android:text="填写驳回原因"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/et_dialog_reject_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="top|left"
+        android:background="@drawable/edit_text_apply_background_white_shape"
+        android:padding="4dp"
+        android:lines="8"
+        android:hint=""
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/btn_dialog_reject_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:background="@drawable/btn_background_selector"
+        android:padding="14dp"
+        android:text="确定"
+        android:textColor="@drawable/btn_text_color_selector"
+        android:textSize="16sp"/>
+</LinearLayout>

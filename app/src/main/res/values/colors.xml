@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#52A7FA</color> <!-- 1DC3FE -->
+    <color name="colorPrimaryGov">#52A7FA</color>
+    <color name="colorPrimaryDark">#4D9FED</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_tooth_text_gray">#999999</color>
+    <color name="blue_tooth_text_black">#333333</color>
+    <color name="tabHost_background">#F8F8F8</color>
+    <color name="tabHost_text_color_select">#0191FF</color>
+    <color name="tabHost_text_color_normal">#979797</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="txtgray">#9FAFB6</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pinkred">#FF003C</color>
+    <color name="black_light">#333333</color>
+    <color name="gray">#808080</color>
+    <color name="text_title_color">#646D75</color>
+    <color name="gray_dark">#2C2C2C</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="btn_red_color">#FE4F63</color>
+    <color name="gray_light">#EFEFEF</color>
+    <color name="gray_line">#EFEFEF</color>
+    <color name="home_page_org_sub_name_text_color">#FFE7E7</color>
+    <color name="home_page_org_sub_title_text_color">#080808</color>
+    <color name="home_page_synopsis_details_color">#666666</color>
+    <color name="home_page_background_color">#EFEFEF</color>
+    <color name="home_page_split_line_color">#EFEFEF</color>
+    <color name="home_page_line_color">#F8F8F8</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <!-- 时间选择器使用 -->
+    <color name="pickerview_timebtn_nor">#52A7FA</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="text_color_normal">#676767</color>
+    <color name="home_text_color_select">#E3EDF2</color>
+    <color name="personal_text_color_select">#E3EDF2</color>
+    <color name="background_color_gray">#f0f0f0</color>
+    <color name="line_color">#d8d8d8</color>
+    <color name="btngray">#8d8d8d</color>
+    <!-- 条目分割线颜色 -->
+    <color name="recycler_view_item_division_color">#E0E0E0</color>
+    <!-- 护理信息展示页面中, 不同数据展示不同的背景色 -->
+    <color name="nursing_info_color_one">#EBF9FE</color>
+    <color name="nursing_info_color_two">#D4F3FE</color>
+    <color name="nursing_info_color_three">#96E2FE</color>
+    <color name="bgColor_overlay">#60000000</color>
+    <!-- 页面上层级别加载框的背景颜色 -->
+    <color name="background_loading_white">#78000000</color>
+</resources>

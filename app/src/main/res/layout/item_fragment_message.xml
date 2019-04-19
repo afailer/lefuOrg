@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_touch_background"
+	android:clickable="true"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/date_item_message_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="16小时前"
+        android:textSize="12sp"
+        android:textColor="#AAAAAA"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="19dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:background="@drawable/item_touch_background"
+	        >
+	        <TextView 
+	            android:id="@+id/theme_item_message_fragment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="民政部门发布调查问卷通知"
+	            android:textSize="16sp"
+	            android:textColor="#2C2C2C"
+	            />
+	        <TextView 
+	            android:id="@+id/status_item_message_fragment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="4dp"
+	            android:paddingBottom="4dp"
+	            android:paddingLeft="9dp"
+	            android:paddingRight="9dp"
+	            android:background="#FFC3C9"
+	            android:layout_alignParentRight="true"
+	            android:text="未读"
+	            android:textSize="10sp"
+	            android:textColor="@color/white"
+	            />
+	        
+	        
+	        
+	    </RelativeLayout>
+	    
+        <TextView 
+            android:id="@+id/date_create_item_message_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="8月10日"
+            android:textSize="12sp"
+            android:textColor="#AAAAAA"
+            />
+        
+        <ImageView 
+            android:id="@+id/img_item_message_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:src="@mipmap/lefu_gray"
+            android:scaleType="fitXY"
+            />
+        
+        <TextView 
+            android:id="@+id/details_item_message_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textSize="12sp"
+            android:textColor="#AAAAAA"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
